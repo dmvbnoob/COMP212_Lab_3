@@ -1,0 +1,14 @@
+﻿<Window x:Class="Question2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Question2"
+        mc:Ignorable="d"
+        Title="Log In" Height="300" Width="400">
+    <StackPanel VerticalAlignment="Center" Margin="0,12,0,0">
+        <local:LogInUserControl x:Name="liuc_main" Username="{Binding Path=UserInputUsername}" Password="{Binding Path=UserInputPassword}" />
+        <Button x:Name="btnLog" Content="LOG IN" Click="btnLog_Click" Width="120" Height="32" Background="#FF00B2FF" Foreground="White" BorderBrush="#FF00B2FF" FontWeight="Bold" Margin="0,28,0,0" />
+    </StackPanel>
+
+</Window>
